@@ -1,0 +1,41 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+
+#outer{
+    border: 2px solid black;
+
+    width: 500px;
+    height: 500px;
+    display: flex;
+    
+    /* 정렬 */
+    justify-content: space-around;
+    align-items: center;
+    /* space-between, around, evenly */
+    /* main axios(중앙 중심축), cross axios(교차 중심축) 중심축 */
+
+    /* 축 사이의 간격 조절 */
+    /* align-content: space-around; */
+
+        /* 중심 축 설정 */
+    flex-direction: row-;
+
+    /* 아이템 포장 */
+    /* flex-wrap: wrap;  */
+
+}
+
+#outer > div:nth-child(2) {
+    background-color: yellow;
+    /* align-self: start; */
+    order: 1;
+}
+
+#outer > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

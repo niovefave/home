@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 태그</title>
+</head>
+<body>
+    <h1>폼 관련 태그</h1>
+
+    <!--  <form> 태그
+    form 태그는 html에서 사용자가 입력할 수 있는 양식을 제공하는 태그이다.
+    form 태그 내의 <input> 태그들을 통해서 사용자가 입력한 정보를 서버로 넘기면서 요청하는 역할을 한다.
+
+    * 속성
+    action : 폼 내에 입력된 값들을 전달할 서버에 대한 내용을 기입한다.
+    method : get / post 방식으로 전송 방식을 지정한다.
+    get : 서버에 사용자가 입력한 값들을 URL에 노출시켜서 전달하는 방식
+    post : 서버에 사용자가 입력한 값들을 URL에 노출시키지 않고 전달하는 방식
+    autocomplete : 이전 입력 내용을 출력하는 기능(default : on, 각 태그별로 지정 가능) -->
+
+<h2>폼 태그의 기본구조</h2>
+        <!-- 폼태그는 input들을 모아서 제출하기 위해사용 -->
+
+<form action="">
+    <span>아이디 : </span>
+    <input type="text" placeholder="제목을 입력하세요." value="가나다" name="userId">
+    <br>
+
+    <span>패스워드 : </span>
+    <input type="password" placeholder="비밀번호를 입력하세요.">
+    <br>
+    <span>넘버 : </span>
+    <input type="number" max="10" min="-10" value="3">
+    
+    <br>
+    <span>서치 : </span>
+    <input type="search" placeholder="검색">
+    <br>
+    <span> URL : </span>
+    <input type="url" value="www.naver.com">
+    <br>
+    <span>email : </span>
+    <input type="email">
+    <br>
+    <span>tel : </span>
+    <input type="tel">
+        <br>
+
+    <input type="submit" value="제출하기">
+    <input type="reset" value="다시작성하기">
+    <button type="button">배고파</button>
+    <input type="button" value="배고파2">
+</form>
+
+<hr>
+
+<h2>숫자 관련 인풋태그들</h2>
+<!-- 
+    type="number"
+    입력창에 숫자를 입력하는 것이 기본이지만, 브라우저에 따라서 스핀 박스가 표시되기도 한다.
+    (스핀 박스 : 입력창 오른쪽에 위/아래 화살표 버튼)
+
+    type="range" : 슬라이드바를 통한 숫자 지정 기능
+-->
+    <span>넘버 : </span>
+    <input type="number">
+    <br>
+    <span>range : </span>
+    <input type="range" min="0" max="100" value="30" step="20">
+
+    <hr>
+
+    <h2>날짜/시간 관련 인풋태그들</h2>
+    <!-- type="date|month|week|time|datetime|datetime-local" -->
+
+    <input type="date">
+    <br>
+    <input type="month">
+    <br>
+    <input type="week">
+    <br>
+    <input type="time">
+    <br>
+    <input type="datetime-local">
+
+    <hr>
+
+    <h2>라디오오버튼, 체크박스</h2>
+    <!-- 
+        type="radio"
+        여러 항목 중 한 가지만 선택해야 할 경우 사용한다.
+        태그 여러 개를 선언하여 하나의 용도로 사용할 경우 name 속성의 값이 같아야 한다.
+    
+        type="checkbox"
+        여러 항목 중 여러 가지를 선택해도 가능할 경우 사용한다.
+        태그 여러 개를 선언하여 하나의 용도로 사용할 경우 name 속성의 값이 같아야 한다. -->
+    <form action="">
+        <span>남자</span>
+        <input type="radio" name="gender" value="male">
+        <span>여자</span>
+        <input type="radio" name="gender" value="female">
+
+    <hr>
+
+        <span>코딩</span>
+        <input type="checkbox" name="hobby" value="coding">
+        <span>프로그래밍</span>
+        <input type="checkbox" name="hobby" value="programming">
+        <span>개발</span>
+        <input type="checkbox" name="hobby" value="dev">
+        <br>
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <h2>셀렉트 태그</h2>
+    <!-- 
+        select 태그와 option 태그 
+        사용자가 내용을 입력하는 것이 아닌 여러 옵션 중에서 선택하게 하고 싶을 때 사용하는 드롭 다운 목록이다.
+    -->
+    <select name="national">
+        <option value="ko">한국</option>
+        <option value="jp">미국</option>
+        <option value="us">일본</option>
+    </select>
+
+
+    <hr>
+
+    <h2>여러줄 택스트</h2>
+    <textarea name="" id=""></textarea>
+
+    <h2>색상</h2>
+    <input type="color">
+</body>
+</html>

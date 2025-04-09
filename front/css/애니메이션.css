@@ -1,0 +1,89 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+}
+
+#test01:hover{
+    background-color: red;
+    transform: scale(2);
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: cubic-bezier(.18,.54,.91,.52);
+    transition-property: transform;
+}
+
+#test02:hover{
+    animation-name: hello;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    /* animation-fill-mode: backwards; */
+    
+}
+
+@keyframes hello{
+    0%{
+        background-color: red;
+        transform: scale(1);
+    }
+    100%{
+        background-color: purple;
+        transform: scale(2);
+    }
+}
+
+#test02:active{
+    animation-play-state: paused;
+}
+
+#test03:hover{
+    animation: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+        background-color: red;
+        transform: translate(0px , 0px);
+    }
+    25%{transform: translate(100px , 0px);}
+    50%{transform: translate(100px , 100px);}
+    75%{transform: translate(0px , 100px);}
+    100%{
+        transform:  rotate(360deg);
+        background-color: blue;
+        transform: translate(0px , 0px);
+    }
+}
+
+#test04{
+    width: 70px;
+    height: 30px;
+    background-color: plum;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+#test04:hover{
+    animation-name: div4x;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    
+
+}
+
+@keyframes div4x{
+    0%{transform: scale(1,1);}
+    25%{transform: scale(1.25,0.75);}
+    50%{transform: scale(0.75,1.25);}
+    75%{transform: scale(1.15,0.85);}
+    100%{transform: scale(1,1);}
+}

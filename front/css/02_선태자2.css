@@ -1,0 +1,93 @@
+div[name=n1]{background-color: aqua;}
+
+
+
+/* div 중에 name 속성값이 name1과 일치하는 태그 */
+div[name=name1] {
+    background-color: orangered;
+}
+
+/* div 중에 name 속성안에 name1이 포함되어 있는 태그 (단, 속성값이 띄어쓰기로 구분) */
+div[name~=name1] {
+    background-color: yellow;
+}
+
+/* div 중에 class 속성에서 class로 시작되는 태그 (단, -로 구분) */
+div[class|=class] {
+    background-color: springgreen;
+}
+
+/* div 중에 name 속성이 name으로 시작되는 태그 */
+div[name^=name] {
+    background-color: blue;
+}
+
+/* div 중에 class 속성이 class로 끝나는 태그 */
+div[class$=class] {
+    color: white;
+}
+
+/* div 중에 class 속성에 i를 포함하는 태그 */
+div[class*=i] {
+    background-color: greenyellow;
+    color: red;
+}
+
+/* 클래스 div-class인 것 중 name 속성값에 name3 포함되어 있는 경우 (단, 속성값이 띄어쓰기로 구분)*/
+.div-class[name~=name3] {
+    background-color: pink;
+}
+
+/* ===================================================================================== */
+/* 자식 선택자 , 후손 선택자 */
+
+
+ul>.coffee{
+    background-color: yellow;
+}
+
+
+#test-children li {background-color: coral;}
+
+
+
+
+/* 동위 선택자 */
+
+#same-level-test + div{
+    background-color: yellow;
+}
+
+
+/* 반응 선택자 */
+#active-test:active {
+    background-color: chocolate;
+}
+
+#hover-test:hover{
+    background-color: aquamarine;
+}
+
+/* 상태 선택자 */
+
+#focus-test:focus{
+    background-color: blueviolet;
+}
+
+#check-test:checked{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* 일반 구조 선택자 */
+#test-div > p:not(:nth-child(3)){   
+    background-color: goldenrod;
+}
+
+/* 문자 선택자 */
+/* selection,first-letter,line(p태그 자체를 조절)  */
+#string-test::after{
+    content: '해윙';
+    background-color: plum;
+}

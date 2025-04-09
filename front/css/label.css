@@ -1,0 +1,38 @@
+input[type="checkbox"]:checked + #like {
+    background-color: red;
+}
+
+#checkbox{
+    display: none;
+}
+
+#like{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 999px;
+}
+
+
+input[type="checkbox"]:checked + #like2{
+    background-color: yellow;
+    
+}
+
+#like2{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 999px;
+}
+
+#checkbox2{
+    display: none;
+}
+
+main{
+    display: flex
+}
+
+
+

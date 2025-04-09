@@ -1,0 +1,26 @@
+h1{
+    background-color: antiquewhite;
+}
+
+#test01{
+    width: 500px;
+    height: 500px;
+    /* background-color: aqua; */
+    border: 30px dashed rgb(255, 153, 0);
+    background-image: url(/resoursces/image/자전거3.jpg);
+    background-color: bisque;
+    padding: 50px;
+
+    /* 반복 설정 */
+    background-repeat: no-repeat;
+
+    /* 위치 설정 */
+    /* / background-position: con==one100px 200px;  */
+
+    /* 크기 설정 */
+    /* background-size: contain;*/
+
+
+    /* 배치 기준 설정 */
+    background-origin: content-box
+}

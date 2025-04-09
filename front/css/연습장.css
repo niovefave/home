@@ -1,0 +1,25 @@
+#outer{
+    border: 4px solid red;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box{
+    border: 4px solid blue;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box2{
+    border: 4px solid orange;
+    width: 90px;
+    height: 50px;
+}

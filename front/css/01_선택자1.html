@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자1</title>
+
+    <style>
+        .world {
+            background-color: black;
+            color: yellow;
+        }
+
+        /* 첫번째 div 배경색 변경 */
+        .test {
+            background-color: skyblue;
+        }
+
+        .red{background-color: red;}
+        .blue{background-color: blue;}
+        .green{background-color: green;}
+        
+
+
+    </style>
+
+</head>
+<body>
+
+    <h1>선택자1</h1>
+     <!--
+        내부 스타일 시트
+        현재 문서에 <style> 태그 내부에 스타일 정보를 저장하는 방법
+        (같은 문서 내에 스타일 존재)  -->
+
+        <h1 id="abc" class="hello world">선택자</h1>
+        <pre>
+        요소를 선택함
+        , : 여러가지 요소 선택가능
+        * : 모든 요소 선택
+        </pre>
+
+        <!-- 태그 선택자(x,x~~~), 
+         클래스 선택자(중복가능 / .xxx), 
+         아이디 선택자(ID) 중복X / #xxx) 
+         클래스, 아이디 동시에 적용가능.
+         -->
+
+         <div id="div01" class="test a">가</div>
+         <div id="div02" class="test a">나</div>
+         <div id="div03" class="test b">다</div>
+         <div id="div04" class="test b">라</div>
+         <div id="div05" class="test b">마</div>
+
+        <hr>
+
+        <div class="red">클래스 레드</div>
+        <div class="blue">클래스 블루</div>
+        <div class="green">클래스 그린</div>
+
+</body>
+</html>

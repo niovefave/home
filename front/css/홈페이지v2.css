@@ -1,0 +1,250 @@
+body{
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    font-family: 'NanumSquareNeoBold';
+}
+
+body button{
+    cursor: pointer;
+}
+
+#select{
+    padding-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+select{
+    font-size: 12px;
+}
+
+#outer{
+    width: 500px;
+    height: 100vh;  
+    
+    display: flex;
+    flex-direction: column;
+    /*  align-items = stretch가 기본값 교차축 기준으로 늘려준다. */
+}
+
+.a{
+    height: 20vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-style: 900;
+    background-color: white;
+    font-family: 'NanumSquareNeoHeavy';
+    
+}
+
+h1{
+    margin-top: 80px;
+}
+
+h1 > a{
+    color: rgb(9, 170, 92);
+    text-decoration: none;
+}
+
+.font{font-size: large;}
+
+
+
+#bTop{
+    display: flex;
+    justify-content: space-evenly;
+    height: 15%;
+    align-items: center;
+    font-size: 16px;
+}
+
+.button button:active{
+    background-color: rgb(219, 219, 219);
+}
+
+button{
+    border: none;
+    padding: 18px 38px;
+    background-color: white;
+}
+
+#textBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 25%;
+    justify-content: center;
+    
+}
+
+.textBox{
+    width: 450px;
+    height: 47px;
+    border-radius: 5px;
+    border: 1px solid rgb(197, 204 , 210);
+    font-size: medium;
+    padding-left: 10px;
+    
+}
+
+#checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 9%;
+}
+
+
+.log1{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logIn:active{
+    background-color: gray;
+
+}
+
+#logIn{
+    width: 451px;
+    font-size: x-large;
+    font-style: 800;
+    background-color: rgb(197, 204 , 210);
+    color: white;
+    border-radius: 10px;
+}
+
+.hf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    padding-top: 10px;
+}
+
+#x{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#passKey{
+    height: 60px;
+    width: 450px;
+    border-radius: 10px;
+    color: rgb(9, 170, 92);
+    border: 1px solid rgb(9, 170, 92);
+    width: 450px;
+    font-size: x-large;
+    font-style: bold;
+    font-family: 'NanumSquareNeoextrabold';
+}
+
+#passKey:active{
+    background-color: rgb(225, 227 , 229);
+}
+
+#hf{
+    color: gray;
+    font-size: large;
+}
+
+.b{
+    height: 50vh;
+    border:1.5px solid rgb(225, 227 , 229);
+    border-radius: 8px;
+
+}
+
+#bText{
+    display: flex;
+    justify-content: center;
+}
+
+#bText > button{
+    font-size: large;
+    color: grey
+}
+
+.c{
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.c > div{
+    border: 3px solid white;
+    width: 90%;
+    height: 45%;
+}
+
+.c{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#bottomImg{
+    background-image: url(../resoursces/image/하단배너1.png);
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 500px;
+}
+
+#bottomText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#bottomText1{
+    display: flex;
+    font-size: small;
+    justify-content: space-evenly;
+    width: 400px;
+    padding-left: 25px;
+}
+
+#bottomText1 > div{
+    color: gray
+}
+
+#bottomText2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+}
+
+.pipe{
+    color: azure;
+}
+
+#url{
+    color: rgb(9, 170, 92);
+    text-decoration: none;
+}
+
+#bottomText2 >div:nth-child(1){
+    font-size: x-large;
+    font-style: bold;
+    font-family: 'NanumSquareNeoheavy';
+}
+
+#bottomText2 >div:nth-child(2){color: gray;}
+#bottomText2 >div:nth-child(4){color: gray;}

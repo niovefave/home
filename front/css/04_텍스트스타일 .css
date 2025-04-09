@@ -1,0 +1,87 @@
+#ff01{
+    font-family: "궁서체";
+}
+
+#ff02{
+    font-family: "굴림체";
+}
+
+#ff03{
+    font-family: "용용체", "궁서체";
+}
+
+#fs{
+    font-size: 2rem;
+}
+
+#fw{
+    font-weight: 00;
+}
+
+#fstyle{
+    font-size: oblique;
+    font-size: oblique;
+
+}
+
+#text-color{
+    color : rgba(255, 0, 0);
+}
+
+#td{
+    text-decoration: overline;
+}
+
+#tt{
+    text-transform: lowercase;
+}
+
+
+#ts{
+    font-size: 3em;
+    font-weight: 900;
+    text-shadow: 0px 0px 15px red,
+     0px 0px 15px yellow
+    ; 
+
+
+}
+
+
+#ls{
+    color: black;
+    /* letter-spacing: 2px; */
+    /* word-spacing: 3px; */
+    /* text-align: justify; */
+    /* line-height: 50px; */
+}
+
+#to{
+    background-color: gray;
+    width: 300px;
+    height: 300px;
+    overflow: scroll;
+}
+
+#uls{
+    list-style-type:disc 
+}
+
+#ols{
+    /* list-style-type: upper-alpha; */
+    /* list-style-image: url(/resoursces/image/다운로드.jpg); */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
