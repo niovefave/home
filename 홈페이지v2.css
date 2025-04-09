@@ -191,11 +191,10 @@ button{
 .c{
     display: flex;
     justify-content: space-evenly;
-
 }
 
 #bottomImg{
-    background-image: url(/front/resoursces/image/하단배너1.png);
+    background-image: url(../resoursces/image/하단배너1.png);
     background-size: cover ;
     background-position: center;
     background-repeat: no-repeat;
